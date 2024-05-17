@@ -1,10 +1,10 @@
- // Template URL da API OpenWeatherMap
+
     var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q={CIDADE}&appid={API_KEY}&lang=pt_br';
 
-    // Função para trazer os dados da API
     function carregarDados() {
-        var cidade = 'Guarulhos'; // Definir cidade
-        var apiKey = '777fd6c175f16899b669ab9b22be7638'; // Substitua por sua própria chave de API
+        var cidade = document.getElementById("city").value;
+        //var cidade = 'Barueri'; // Definir cidade
+        var apiKey = '6b754e23fe158f87a4fd15c392fcbba9'; 
 
         // Substituir {CIDADE} e {API_KEY} pelos valores apropriados na URL da API
         var url = apiUrl.replace('{CIDADE}', cidade).replace('{API_KEY}', apiKey);

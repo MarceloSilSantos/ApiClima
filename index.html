@@ -8,6 +8,12 @@
 <body>
     <h1>Previsão do Tempo</h1>
 
+    <form id="cityForm">
+        <label for="city">Digite o nome da cidade:</label>
+        <input type="text" id="city" required>
+        <button type="button" onclick="carregarDados()">Buscar</button>
+    </form>
+
     <div id="weather-info">
         <p>Carregando informações...</p>
     </div>
